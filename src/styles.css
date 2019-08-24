@@ -11398,7 +11398,7 @@
   }
   
   .sidebar-light hr.sidebar-divider {
-    border-top: 1px solid #eaecf4;
+    border-top: 1px solid #ecf4ea;
   }
   
   .sidebar-light .sidebar-heading {
@@ -12057,5 +12057,11 @@
   
   body.sidebar-toggled footer.sticky-footer {
     width: 100%;
+  }
+
+  .col-sm-3{
+    width:  800px;
+    height: 200px;
+    margin-right: 8000px;
   }
   
