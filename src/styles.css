@@ -10685,9 +10685,9 @@
   }
   
   .bg-gradient-primary {
-    background-color: #4e73df;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #4e73df), to(#224abe));
-    background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
+    background-color: #4f5d75;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #4f5d75), to(#404353));
+    background-image: linear-gradient(180deg, #4f5d75 10%, #404353 100%);
     background-size: cover;
   }
   
@@ -12059,9 +12059,4 @@
     width: 100%;
   }
 
-  .col-sm-3{
-    width:  800px;
-    height: 200px;
-    margin-right: 8000px;
-  }
   
