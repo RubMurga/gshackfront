@@ -32,7 +32,7 @@
             {{active_time}}        
         </div>
 
-        <div class="row shadow bg-white p-3 mb-2 rounded" style="height: 300px;overflow-y: scroll;" *ngIf = 'this.personal_info'>
+        <div class="row shadow bg-white p-3 mb-2 rounded" style="height: 300px;overflow-y: scroll; position: relative;" *ngIf = 'this.personal_info'>
             <ul>
                 <li> hola</li>
                 <li> hola</li>
@@ -52,8 +52,9 @@
                 <li> hola</li>
 
             </ul>
+            <input type="text" class="form-control" style="bottom: 1%; left: 16%; ;width: 30%; position: absolute" placeholder="Dile algo a {{this.personal_info.name}}" *ngIf = 'this.personal_info'>
         </div>
     </div>
-    <input type="text" class="form-control" style="bottom: 1%; left: 16%; ;width: 30%; position: fixed" placeholder="Dile algo a {{this.personal_info.name}}" *ngIf = 'this.personal_info'>
+    
 
 </div>
