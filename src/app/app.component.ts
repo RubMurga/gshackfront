@@ -7,18 +7,9 @@ import {FirebaseService} from './firebase.service'
 })
 export class AppComponent implements OnInit{
   title = 'frontend';
-  constructor(private firebaseService : FirebaseService){}
+  constructor(){}
 
   async ngOnInit(){
-    let responses = await this.firebaseService.getPeople()
-    console.log(responses[0].payload.doc.data())
-  }
-
-  markerIconUrl() {
-    return require('../assets/danger.png')
-  }
-
-  marker_click($data){
-    console.log('hola')
+    
   }
 }

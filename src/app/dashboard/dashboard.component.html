@@ -1,0 +1,53 @@
+<div class="row">
+    <div class="col-xl-9">
+        <agm-map [latitude] = '19.3868826' [longitude] = '-99.1765878' [zoom] = 11>
+            <agm-marker [latitude]="19.3868826" [longitude]="-99.1765878" [iconUrl]='markerIconUrl()' (markerClick) = 'this.marker_click(1)'></agm-marker>
+        </agm-map>
+    </div>
+    
+    <div class="col-md-3 shadow p-3 mb-5 rounded" style="background-color:#ccd8d8;">
+        <div class="row shadow bg-white p-3 mb-2 rounded">
+            <div class="row upper_row">
+                <div class="col-md-12 title-centered">Emergencias actuales</div>
+            </div>
+        </div>
+
+        <div class="row shadow bg-white p-3 mb-2 rounded">
+            <div class="row upper_row">
+                <div class="col-md-1" ><img class="user_img" src="./assets/juan.png"></div>
+                <div class="col-md-3"></div>
+                <div class="col-md-7 text-centered">Juan Pérez</div>
+            </div>
+            <div class="row lower_row p-2 ">Me está secuestrando taxi con placa A-234-A</div>
+        </div>
+        
+        <div class="row shadow bg-white p-3 mb-2 rounded">
+            <div class="row upper_row">
+                <div class="col-md-1" ><img class="user_img" src="./assets/alejandra.png"></div>
+                <div class="col-md-3"></div>
+                <div class="col-md-7 text-centered">Alexa Jiménez</div>
+            </div>
+            <div class="row lower_row p-2 ">Alguien entró a mi casa, estoy escondida en el baño</div>
+        </div>
+        
+        <div class="row shadow bg-white p-3 mb-2 rounded">
+            <div class="row upper_row">
+                <div class="col-md-1" ><img class="user_img" src="./assets/armando.jpeg"></div>
+                <div class="col-md-3"></div>
+                <div class="col-md-7 text-centered">Armando Torres</div>
+            </div>
+                <div class="row lower_row p-2">Acabo de tropezar y rompí mi pierna</div>
+        </div>
+
+        <div class="row shadow bg-white p-3 mb-2 rounded">
+            <div class="row upper_row">
+                <div class="col-md-1" ><img class="user_img" src="./assets/ana.png"></div>
+                <div class="col-md-3"></div>
+                <div class="col-md-7 text-centered">Ana Peralta </div>
+            </div>
+                <div class="row lower_row p-2">Mi padre está teniendo un infarto</div>
+        </div>
+
+    </div>
+
+</div>

@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AppComponent } from './app.component';
 import { UniqueTrackingComponent } from './unique-tracking/unique-tracking.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 const routes: Routes = [
   {path: 'tracking/:id', component: UniqueTrackingComponent },
-  {path: '', component: AppComponent, pathMatch: 'full'},
+  {path: '', component: DashboardComponent, pathMatch: 'full'},
 ];
 
 @NgModule({

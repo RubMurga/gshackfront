@@ -10,6 +10,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
 import { UniqueTrackingComponent } from './unique-tracking/unique-tracking.component';
 import { FirebaseService } from './firebase.service';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 
@@ -17,7 +18,8 @@ import { FirebaseService } from './firebase.service';
 @NgModule({
   declarations: [
     AppComponent,
-    UniqueTrackingComponent
+    UniqueTrackingComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
