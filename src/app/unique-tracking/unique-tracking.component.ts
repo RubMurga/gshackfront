@@ -13,6 +13,7 @@ export class UniqueTrackingComponent implements OnInit {
   click = false
   active_position 
   active_time
+  person_id
   constructor(private route: ActivatedRoute, private firebaseService : FirebaseService) {
   }
 
@@ -21,22 +22,26 @@ export class UniqueTrackingComponent implements OnInit {
   }
 
   async ngOnInit() {
-    await this.firebaseService.get_specific_info(this.route.params._value.id)
+    await this.route.params.subscribe(params => {
+      this.person_id = params.id
+    })
+    await this.firebaseService.get_specific_info(this.person_id)
       .then((data) =>  this.personal_info = data.data() )
     
-    await this.firebaseService.get_tracking(this.route.params._value.id)
+    await this.firebaseService.get_tracking(this.person_id)
       .then((data) => this.tracking = data.data().ubicacion)    
-
+  
     this.refresh_map()
   }
 
   async refresh_map(){
-    await this.firebaseService.get_specific_info(this.route.params._value.id)
+    
+    await this.firebaseService.get_specific_info(this.person_id)
       .then((data) =>  this.personal_info = data.data() )
     
-    await this.firebaseService.get_tracking(this.route.params._value.id)
+    await this.firebaseService.get_tracking(this.person_id)
       .then((data) => this.tracking = data.data().ubicacion)  
-
+    
     //await this.sleep(2000);
     //this.refresh_map()
   }
