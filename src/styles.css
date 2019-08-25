@@ -12078,3 +12078,10 @@
     padding-top:5%;
     font-weight: bold;
   }
+
+  .title-centered {
+    margin-top:0%;
+    font-size: 15px;
+    text-align: center;
+    padding-left: 10%;
+  }
