@@ -12073,3 +12073,8 @@
     height: 45px;
     width: 45px;
   }
+
+  .text-centered {
+    padding-top:5%;
+    font-weight: bold;
+  }
