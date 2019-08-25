@@ -33,28 +33,25 @@
         </div>
 
         <div class="row shadow bg-white p-3 mb-2 rounded" style="height: 300px;overflow-y: scroll; position: relative;" *ngIf = 'this.personal_info'>
-            <ul>
-                <li> hola</li>
-                <li> hola</li>
-                <li> hola</li>
-                <li> hola</li>
-                <li> hola</li>
-                <li> hola</li>
-                <li> hola</li>
-                <li> hola</li>
-                <li> hola</li>
-                <li> hola</li>
-                <li> hola</li>
-                <li> hola</li>
-                <li> hola</li>
-                <li> hola</li>
-                <li> hola</li>
-                <li> hola</li>
-
-            </ul>
-            <input type="text" class="form-control" style="bottom: 1%; left: 16%; ;width: 30%; position: absolute" placeholder="Dile algo a {{this.personal_info.name}}" *ngIf = 'this.personal_info'>
+            <div class="d-flex justify-content-start mb-4">
+                <div class="img_cont_msg">
+                    <img src="./assets/juan.png" class="rounded-circle user_img_msg">
+                </div>
+                <div class="msg_cotainer">
+                    Ayuda estoy en peligro en un taxi
+                    <span class="msg_time">8:40 AM, Hoy</span>
+                </div>
+            </div>
+            <div class="d-flex justify-content-end mb-4">
+                <div class="msg_cotainer_send">
+                    Tienes el número de placa?
+                    <span class="msg_time_send">8:45 AM, Hoy</span>
+                </div>
+                <div class="img_cont_msg">
+                    <img src="./assets/ana.png" class="rounded-circle user_img_msg">
+                </div>
+            </div>
+            <input type="text" class="form-control" style="bottom: 2%; width: 90%; position: absolute; font-size:13px;" placeholder="Dile algo a {{this.personal_info.name}}" *ngIf = 'this.personal_info'>
         </div>
     </div>
-    
-
 </div>
