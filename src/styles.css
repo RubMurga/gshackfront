@@ -12059,4 +12059,17 @@
     width: 100%;
   }
 
+  .upper_row {
+    font-size: 14px;
+    width: 100%;
+    font-weight: 'bold';
+  }
   
+  .lower_row {
+    font-size: 13px;
+  }
+
+  .user_img {
+    height: 45px;
+    width: 45px;
+  }
