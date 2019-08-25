@@ -8,13 +8,16 @@ import { AgmCoreModule } from '@agm/core';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { environment } from '../environments/environment';
+import { UniqueTrackingComponent } from './unique-tracking/unique-tracking.component';
+import { FirebaseService } from './firebase.service';
 
 
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UniqueTrackingComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +28,7 @@ import { environment } from '../environments/environment';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
   ],
-  providers: [],
+  providers: [FirebaseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
