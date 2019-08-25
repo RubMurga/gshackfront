@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'frontend';
+
+  markerIconUrl() {
+    return require('../assets/danger.png')
+  }
+
+  marker_click($data){
+    console.log('hola')
+  }
 }
