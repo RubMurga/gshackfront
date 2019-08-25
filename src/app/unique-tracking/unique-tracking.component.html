@@ -1,1 +1,59 @@
-<p>unique-tracking works!</p>
+<div class="row">
+    <div class="col-xl-9" *ngIf = 'tracking'>
+        <agm-map [latitude] = '19.3868826' [longitude] = '-99.1765878' [zoom] = 11>
+            <agm-marker  *ngFor = 'let position of tracking; let i=index' [latitude]="position.lat" [longitude]="position.lng" [iconUrl]='markerIconUrl()' (markerClick) = 'this.marker_click(position)'></agm-marker> 
+        </agm-map>
+    </div>
+    
+    <div class="col-md-3 shadow p-3 mb-5 rounded" style="background-color:#ccd8d8;">
+        <div class="row shadow bg-white p-3 mb-2 rounded">
+            <div class="row upper_row">
+                <div class="col-md-12 title-centered">Información personal</div>
+            </div>
+        </div>
+
+        <div class="row shadow bg-white p-3 mb-2 rounded">
+            <div class="row upper_row">
+                <div class="col-md-1" ><img class="user_img" src="{{this.personal_info.picture}}" *ngIf = 'this.personal_info'></div>
+                <div class="col-md-3"></div>
+                <div class="col-md-7 text-centered" *ngIf = 'this.personal_info'>{{this.personal_info.name}}</div>
+            </div>
+            <div class="row lower_row p-2" *ngIf = 'this.personal_info'>
+                <i>{{this.personal_info.distinctive}}</i>
+                <br><br>
+                Edad: {{this.personal_info.age}} 
+                <br>
+                Tipo de sangre: {{this.personal_info.blood_type}}
+            </div> 
+        </div>
+
+
+        <div class="row shadow bg-white p-3 mb-2 rounded" *ngIf = 'this.click' style="height: 50px; font-size:11px;">
+            {{active_time}}        
+        </div>
+
+        <div class="row shadow bg-white p-3 mb-2 rounded" style="height: 300px;overflow-y: scroll;" *ngIf = 'this.personal_info'>
+            <ul>
+                <li> hola</li>
+                <li> hola</li>
+                <li> hola</li>
+                <li> hola</li>
+                <li> hola</li>
+                <li> hola</li>
+                <li> hola</li>
+                <li> hola</li>
+                <li> hola</li>
+                <li> hola</li>
+                <li> hola</li>
+                <li> hola</li>
+                <li> hola</li>
+                <li> hola</li>
+                <li> hola</li>
+                <li> hola</li>
+
+            </ul>
+        </div>
+    </div>
+    <input type="text" class="form-control" style="bottom: 1%; left: 16%; ;width: 30%; position: fixed" placeholder="Dile algo a {{this.personal_info.name}}">
+
+</div>

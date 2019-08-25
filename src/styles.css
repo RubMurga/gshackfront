@@ -12085,3 +12085,6 @@
     text-align: center;
     padding-left: 10%;
   }
+agm-map {
+    height: 650px;
+}
